@@ -6,7 +6,7 @@ import shape_2 from '@/assets/img/home-04/about/about-shape-1.png'
 
 export default function AboutTwo() {
   return (
-    <div className="tp-about-4-area pt-100 pb-110 p-relative">
+    <div className="tp-about-4-area pt-500 pb-110 p-relative">
       <div className="tp-about-4-shape-2">
         <Image
           className="tp-zoom-in-out"
@@ -15,7 +15,7 @@ export default function AboutTwo() {
         />
       </div>
       <div className="container">
-        <div className="row">
+        {/* <div className="row">
           <div className="col-xl-10 col-md-10">
             <div className="tp-about-4-title-box tp_fade_bottom">
               <h4 className="tp-about-4-title">
@@ -24,7 +24,7 @@ export default function AboutTwo() {
               </h4>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row align-items-center">
           <div className="col-xl-3 col-lg-2 col-md-3">
             <div className="tp-about-4-shape-1">

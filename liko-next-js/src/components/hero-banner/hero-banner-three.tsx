@@ -57,7 +57,7 @@ export default function HeroBannerThree() {
                   </p>
                 </div>
               </div>
-              <div className="tp-hero-4-thumb text-end">
+              {/* <div className="tp-hero-4-thumb text-end">
                 <Image
                   style={{ width: "100%", height: "auto" }}
                   priority
@@ -65,7 +65,7 @@ export default function HeroBannerThree() {
                   src={hero_img}
                   alt="hero-img"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -17,13 +17,19 @@ import ProjectThree from "@/components/project/project-three";
 import BrandTwo from "@/components/brand/brand-two";
 import TeamTwo from "@/components/team/team-two";
 import FooterThree from "@/layouts/footers/footer-three";
+import VideOne from "@/components/video/video-one";
 // animation
 import { bounceAnimation, charAnimation, fadeAnimation, revelAnimationTwo } from "@/utils/title-animation";
 import { serviceMarqueAnim } from "@/utils/scroll-marque";
 import { panelTwoAnimation } from "@/utils/panel-animation";
 import { hoverBtn } from "@/utils/hover-btn";
+import { videoAnimOne } from "@/utils/video-anim";
+
+
 
 const HomeThreeMain = () => {
+
+  
   useScrollSmooth();
   useEffect(() => {
     document.body.classList.add("tp-smooth-scroll");
@@ -41,6 +47,17 @@ const HomeThreeMain = () => {
       revelAnimationTwo();
       hoverBtn();
       bounceAnimation();
+      videoAnimOne();
+            // portfolio image wrap
+            gsap.timeline({
+              scrollTrigger: {
+                 trigger: ".tp-project-full-img-wrap",
+                 start: "top 65",
+                 end: "bottom 0%",
+                 pin: ".tp-project-full-img",
+                 pinSpacing: false,
+              }
+            });
     },100);
     return () => clearTimeout(timer);
   });
@@ -62,8 +79,9 @@ const HomeThreeMain = () => {
             >
               {/* hero area start */}
               <HeroBannerThree />
+              
               {/* hero area end */}
-
+              <VideOne />  
               {/* about area start */}
               <AboutTwo />
               {/* about area end */}
